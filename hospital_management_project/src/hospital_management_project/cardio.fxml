@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="493.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hospital_management_project.DoctorController">
+   <children>
+      <ImageView fitHeight="493.0" fitWidth="1000.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@help-your-cardiologist-1%20new.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="cardio1" layoutX="117.0" layoutY="52.0" onMouseClicked="#cardio1_action" prefHeight="346.0" prefWidth="273.0" style="-fx-background-color: white;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <ImageView fitHeight="111.0" fitWidth="101.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@1432631582.jpg" />
+               </image>
+            </ImageView>
+            <JFXTextArea editable="false" layoutX="11.0" layoutY="155.0" prefHeight="170.0" prefWidth="251.0" text="&#10;Dr. Shams Munwar&#10;&#10;MBBS, MRCP (UK), FRCP (London), D.Card (London)&#10;&#10;Coordinator &amp; Senior Consultant" unFocusColor="#4059a9">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXTextArea>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="cardio2" layoutX="603.0" layoutY="52.0" onMouseClicked="#cardio2_action" prefHeight="346.0" prefWidth="273.0" style="-fx-background-color: white;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <ImageView fitHeight="111.0" fitWidth="101.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@1432640390.jpg" />
+               </image>
+            </ImageView>
+            <JFXTextArea editable="false" layoutX="11.0" layoutY="173.0" prefHeight="149.0" prefWidth="251.0" text="Dr. A.Q.M. Reza&#10;&#10;MBBS, MD (Cardiology), FACC (USA)&#10;&#10; Senior Consultant" unFocusColor="#4059a9">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXTextArea>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,13 @@
+
+.button:hover{
+    -fx-background-color: #2b2068;
+    -fx-cursor: hand;
+}
+
+.button:focused{
+    -fx-background-color: #2b2068;
+}
+
+.button{
+    -fx-background-color: #8a99bb;
+}

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="535.0" prefWidth="179.0" style="-fx-background-color: #c7cfda;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hospital_management_project.Menu_drawerController">
+   <children>
+      <ImageView fitHeight="133.0" fitWidth="179.0" preserveRatio="true">
+         <image>
+            <Image url="@221225o1ruw0nf5pnw9r2p.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btn1" onAction="#menu_change" prefHeight="68.0" prefWidth="179.0" stylesheets="@drawer_button.css" text="Medical Records" textFill="#2f225b">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="33.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@first-aid-medical-kit-icon-psd-image-2336first-aid-kit-white-icon-512x512.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btn2" onAction="#menu_change" prefHeight="68.0" prefWidth="179.0" stylesheets="@drawer_button.css" text="Appointments" textFill="#2f225b">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="27.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@past1600.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btn3" onAction="#menu_change" prefHeight="68.0" prefWidth="179.0" stylesheets="@drawer_button.css" text="Personal info." textFill="#2f225b">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@51372.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <AnchorPane prefHeight="224.0" prefWidth="179.0">
+         <children>
+            <JFXButton fx:id="btn4" layoutY="167.0" onAction="#menu_change" prefHeight="59.0" prefWidth="179.0" stylesheets="@logout_button.css" text="Logout" textFill="#a81b1b">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="27.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@logout-1-512.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

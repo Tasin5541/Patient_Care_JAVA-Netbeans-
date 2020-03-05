@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hospital_management_project.Menu_pageController">
+   <children>
+      <JFXButton fx:id="username" layoutX="901.0" layoutY="12.0" onAction="#username_action" stylesheets="@button_mousePointer.css" text="username">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <AnchorPane layoutY="51.0" prefHeight="56.0" prefWidth="1000.0" style="-fx-background-color: #8a99bb;">
+         <children>
+            <JFXButton fx:id="doctor" layoutX="79.0" layoutY="3.0" onAction="#doctor_action" prefHeight="51.0" prefWidth="183.0" ripplerFill="#2b2068" stylesheets="@button_hover.css" text="Appointment" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Untitled-46-512.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="tour" layoutX="573.0" layoutY="3.0" onAction="#tour_action" prefHeight="51.0" prefWidth="172.0" ripplerFill="#2b2068" stylesheets="@button_hover.css" text="Virtual Tour" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@vacation-icon-6421.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="treatment" layoutX="335.0" layoutY="3.0" onAction="#treatment_action" prefHeight="51.0" prefWidth="165.0" ripplerFill="#2b2068" stylesheets="@button_hover.css" text="Treatments" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Treatment-512.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="direction" layoutX="806.0" layoutY="3.0" onAction="#direction_action" prefHeight="51.0" prefWidth="153.0" ripplerFill="#2b2068" stylesheets="@button_hover.css" text="Directions" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@road-direction-icon-13960.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <Label prefHeight="56.0" prefWidth="52.0" style="-fx-background-color: #4d42b5;" textFill="#4d42b5">
+               <graphic>
+                  <JFXButton fx:id="home_btn" contentDisplay="CENTER" onAction="#home_btn_action" prefHeight="56.0" prefWidth="52.0" stylesheets="@button_mousePointer.css" text=" ">
+                     <graphic>
+                        <ImageView fitHeight="29.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Blue%20Sketch%20Home-256x256.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </graphic>
+               <effect>
+                  <DropShadow blurType="ONE_PASS_BOX" />
+               </effect>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+      <ImageView fitHeight="36.0" fitWidth="37.0" layoutX="865.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@man.png" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="menu_root" layoutY="107.0" prefHeight="493.0" prefWidth="1000.0" />
+   </children>
+</AnchorPane>

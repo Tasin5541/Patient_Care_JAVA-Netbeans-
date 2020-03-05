@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="493.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hospital_management_project.TourController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="493.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fx:id="tour_image" fitHeight="485.0" fitWidth="657.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@25748487.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <JFXButton fx:id="next" contentDisplay="CENTER" layoutX="870.0" layoutY="200.0" onAction="#next_action" prefHeight="79.0" prefWidth="90.0" ripplerFill="WHITE" text=" ">
+         <graphic>
+            <ImageView fitHeight="71.0" fitWidth="69.0">
+               <image>
+                  <Image url="@tiny-arrow-right-double-256.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="prev" contentDisplay="CENTER" layoutX="31.0" layoutY="207.0" onAction="#prev_action" prefHeight="79.0" prefWidth="90.0" ripplerFill="WHITE" text=" ">
+         <graphic>
+            <ImageView fitHeight="71.0" fitWidth="69.0">
+               <image>
+                  <Image url="@tiny-arrow-left%20double-256.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

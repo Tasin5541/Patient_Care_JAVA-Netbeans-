@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="535.0" prefWidth="821.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hospital_management_project.Medical_recordController">
+   <children>
+      <TableView fx:id="tableView" prefHeight="535.0" prefWidth="821.0" stylesheets="@appointmentCSS.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="discomfortscol" prefWidth="75.0" text="Discomforts" />
+          <TableColumn fx:id="doctorcol" prefWidth="75.0" text="Doctor" />
+            <TableColumn fx:id="evaluationcol" prefWidth="75.0" text="Evaluaion" />
+            <TableColumn fx:id="medicationcol" prefWidth="75.0" text="Medication" />
+            <TableColumn fx:id="treatmentscol" prefWidth="75.0" text="Treatments" />
+            <TableColumn fx:id="suffering_periodcol" prefWidth="98.0" text="Suffering Period" />
+            <TableColumn fx:id="statuscol" prefWidth="89.0" text="Current Status" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </children>
+</AnchorPane>

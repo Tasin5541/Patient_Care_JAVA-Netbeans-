@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="619.0" prefWidth="471.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hospital_management_project.PsyController">
+   <children>
+      <ImageView fitHeight="124.0" fitWidth="121.0" layoutX="330.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@1432635531.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="85.0" layoutY="21.0" prefHeight="58.0" prefWidth="346.0" text="Dr. Mahmood Hasan" textFill="#c95a5a">
+         <font>
+            <Font name="Arial Black" size="26.0" />
+         </font>
+      </Label>
+      <JFXTextArea layoutX="14.0" layoutY="100.0" prefHeight="121.0" prefWidth="296.0" text="MBBS, FCPS (Psychiatry)&#10;&#10;Consultant">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXTextArea>
+      <Label layoutX="23.0" layoutY="267.0" text="Visiting Days :" textFill="#6e1d63" underline="true">
+         <font>
+            <Font name="Arial Black" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="306.0" text="Wed - Fri">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="361.0" text="Visiting Hours :" textFill="#6e1d63" underline="true">
+         <font>
+            <Font name="Arial Black" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="398.0" text=" 9am - 3 pm">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="448.0" text="Visiting Charge :" textFill="#6e1d63" underline="true">
+         <font>
+            <Font name="Arial Black" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="487.0" text="900 taka">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="p1" buttonType="RAISED" layoutX="208.0" layoutY="571.0" onAction="#p1_action" prefHeight="25.0" prefWidth="231.0" stylesheets="@doctorAppointment.css" text="BOOK AN APPOINTMENT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

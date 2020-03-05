@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="493.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hospital_management_project.DoctorController">
+   <children>
+      <ImageView fitHeight="493.0" fitWidth="1000.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@2014-11-30-redbrainbluebody_103520693%20new.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="psy1" layoutX="108.0" layoutY="52.0" onMouseClicked="#psy1_action" prefHeight="346.0" prefWidth="273.0" style="-fx-background-color: white;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <ImageView fitHeight="111.0" fitWidth="101.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@1432635531.jpg" />
+               </image>
+            </ImageView>
+            <JFXTextArea editable="false" layoutX="11.0" layoutY="155.0" prefHeight="170.0" prefWidth="251.0" text="&#10;Dr. Mahmood Hasan&#10;&#10;MBBS, FCPS (Psychiatry)&#10;&#10;Consultant" unFocusColor="#4059a9">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXTextArea>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="psy2" layoutX="601.0" layoutY="52.0" onMouseClicked="#psy2_action" prefHeight="346.0" prefWidth="273.0" style="-fx-background-color: white;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <ImageView fitHeight="111.0" fitWidth="101.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@1432632601.jpg" />
+               </image>
+            </ImageView>
+            <JFXTextArea editable="false" layoutX="11.0" layoutY="152.0" prefHeight="170.0" prefWidth="251.0" text="&#10;Dr. Nigar Sultana&#10;&#10;MBBS, MD (USA)&#10;&#10;Consultant" unFocusColor="#4059a9">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXTextArea>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

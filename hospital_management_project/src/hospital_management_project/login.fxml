@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="login_root" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #7bd3d3;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hospital_management_project.LoginController">
+   <children>
+      <ImageView fitHeight="572.0" fitWidth="1000.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@bg.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="207.0" layoutY="103.0" prefHeight="413.0" prefWidth="587.0" style="-fx-background-color: white; -fx-border-width: 5; -fx-border-color: #c2c2c2; -fx-background-radius: 30 30 30 30; -fx-border-radius: 30 30 30 30;">
+         <children>
+            <JFXTextField fx:id="name" focusColor="#2626e4" labelFloat="true" layoutX="136.0" layoutY="91.0" prefHeight="38.0" prefWidth="378.0" promptText="Username">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="pass" focusColor="#2626e4" labelFloat="true" layoutX="136.0" layoutY="197.0" prefHeight="38.0" prefWidth="378.0" promptText="Password">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXButton fx:id="login" buttonType="RAISED" layoutX="206.0" layoutY="340.0" onAction="#login_action" prefHeight="38.0" prefWidth="172.0" style="-fx-background-color: #d0d0d0;" stylesheets="@button_mousePointer.css" text="LOGIN">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="217.0" layoutY="-75.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@man.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="146.0" layoutY="287.0" text="Don't have an account?">
+               <font>
+                  <Font name="Felix Titling" size="12.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="reg" layoutX="321.0" layoutY="279.0" onAction="#reg_action" text="Click Here" textFill="#120b75">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="38.0" fitWidth="44.0" layoutX="83.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../User-256.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="38.0" fitWidth="38.0" layoutX="83.0" layoutY="197.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../33-user_-_password_lock-512.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

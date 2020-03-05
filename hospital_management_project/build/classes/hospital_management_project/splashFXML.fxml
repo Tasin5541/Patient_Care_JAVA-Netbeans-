@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #5e7dda;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hospital_management_project.SplashFXMLController">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="1000.0">
+         <children>
+            <Label layoutX="359.0" layoutY="200.0" text="Patient Care">
+               <font>
+                  <Font name="Cooper Black" size="76.0" />
+               </font>
+               <effect>
+                  <Reflection fraction="0.45" topOffset="-10.0" />
+               </effect>
+            </Label>
+            <Label layoutX="673.0" layoutY="477.0" text="Brought To You By">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="733.0" layoutY="528.0" text="&quot;The Borlies&quot;">
+               <font>
+                  <Font name="Copperplate Gothic Bold" size="21.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="149.0" fitWidth="173.0" layoutX="147.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../1501467460988.png" />
+               </image>
+            </ImageView>
+         </children>
+         <effect>
+            <Lighting specularConstant="1.18" specularExponent="40.0" surfaceScale="10.0">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </AnchorPane>
+   </children>
+</StackPane>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="535.0" prefWidth="821.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hospital_management_project.Appointment_ShowController">
+   <children>
+      <ImageView fitHeight="535.0" fitWidth="821.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../medical-doctor-with-stethoscope4.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tableView" layoutX="64.0" layoutY="39.0" prefHeight="457.0" prefWidth="693.0" stylesheets="@appointmentCSS.css">
+        <columns>
+          <TableColumn fx:id="DoctorCol" prefWidth="319.0" text="Doctor" />
+          <TableColumn fx:id="dateCol" prefWidth="182.0" text="Date" />
+            <TableColumn fx:id="timeCol" prefWidth="191.0" text="Time" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorpane" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hospital_management_project.AccountController">
+   <children>
+      <AnchorPane prefHeight="65.0" prefWidth="1000.0" style="-fx-background-color: #8a99bb;">
+         <children>
+            <JFXHamburger fx:id="hamburger" layoutX="918.0" layoutY="23.0" />
+            <JFXButton fx:id="go_back" layoutX="22.0" layoutY="10.0" onAction="#go_back_action" prefHeight="31.0" prefWidth="107.0" style="-fx-background-color: #6576c9;" text="Go Back" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <JFXDrawer fx:id="drawer" defaultDrawerSize="179.0" layoutY="65.0" prefHeight="535.0" prefWidth="179.0" />
+      <AnchorPane fx:id="root" layoutX="179.0" layoutY="65.0" prefHeight="535.0" prefWidth="821.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="535.0" fitWidth="821.0" layoutX="76.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../giphy(2).gif" />
+               </image>
+            </ImageView>
+            <Label layoutX="14.0" layoutY="21.0" text="Frustrated That You Keep Forgetting About Your Appointment?" textFill="#7c1279" underline="true">
+               <font>
+                  <Font name="Cooper Black" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="45.0" layoutY="73.0" text="Don't Worry">
+               <font>
+                  <Font name="Cooper Black" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="76.0" layoutY="112.0" text="We're Here To Remind You">
+               <font>
+                  <Font name="Cooper Black" size="17.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

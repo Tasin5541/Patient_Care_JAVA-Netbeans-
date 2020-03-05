@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="hospital_management_project.jnlp">
+  <information>
+    <title>hospital_management_project</title>
+    <vendor>User</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="hospital_management_project.jar" size="22325579" download="eager" />
+    <jar href="lib\controlsfx-8.40.12.jar" size="996389" download="eager" />
+    <jar href="lib\controlsfx-samples-8.40.12.jar" size="665038" download="eager" />
+    <jar href="lib\fxsampler-1.0.9.jar" size="30952" download="eager" />
+    <jar href="lib\jfoenix.jar" size="2386350" download="eager" />
+    <jar href="lib\sqlite-jdbc-3.7.2.jar" size="3201133" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="hospital_management_project" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="hospital_management_project.Hospital_management_project"  name="hospital_management_project" />
+  <update check="always"/>
+</jnlp>

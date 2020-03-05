@@ -1,0 +1,9 @@
+
+/*.table-view .column-header-background {
+    -fx-background-color: red;
+}*/
+
+.table-row-cell{
+    -fx-border-color: black;
+    -fx-table-cell-border-color: black;
+}
